@@ -10,7 +10,6 @@ Original file is located at
 import time
 from datetime import datetime
 
-# Base de respuestas automáticas (como si estuviera alojada en la nube)
 RESPUESTAS_CLOUD = {
     "precio": "Hola 👋 Nuestros planes inician desde $50.000 COP/mes. Te enviamos el catálogo por aquí.",
     "horario": "Atendemos de lunes a viernes de 8:00 a.m. a 6:00 p.m. 🕒",
@@ -39,7 +38,6 @@ def procesar_mensaje_nube(cliente: str, mensaje: str):
     print(f"   🤖 Respuesta automática: {respuesta}\n")
 
 
-# Simulamos 3 clientes escribiendo al mismo tiempo
 mensajes_entrantes = [
     ("Laura M.", "Hola, ¿qué precio tiene el servicio?"),
     ("Carlos R.", "Necesito ayuda con soporte técnico por favor"),
